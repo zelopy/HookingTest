@@ -133,11 +133,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * 루팅 여부 체크
-     */
-
-
-    /**
      * USB 연결 여부 체크
      */
     private boolean checkUSBconnect() {
@@ -149,11 +144,6 @@ public class MainActivity extends AppCompatActivity {
         showMessage("checkUSBconnect() " + connected);
         return connected;
     }
-
-
-    /**
-     * 체크 스레드
-     */
 
 
     /**
@@ -195,6 +185,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * http://d3adend.org/blog/?p=589
      * Stab 3: Check for native methods that shouldn’t be native.
+     * 루팅 시 변경되는 네이티브 메소드 체크.
      */
     private void checkNativeMethod() {
         Log.w(TAG, "checkNativeMethod()");
